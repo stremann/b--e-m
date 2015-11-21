@@ -17,9 +17,10 @@
 @import "blocks/videos";
 
 // Partials
-@import "blocks/news-partials/news-main";
-@import "blocks/news-partials/news-extra";
-@import "blocks/news-partials/news-last";
-@import "blocks/news-partials/news-feed";
-@import "blocks/news-partials/news-photo";
-@import "blocks/carousel-partials/carousel-content";
+@import "blocks/news/news-main";
+@import "blocks/news/news-extra";
+@import "blocks/news/news-last";
+@import "blocks/news/news-feed";
+@import "blocks/news/news-photo";
+@import "blocks/carousel/carousel-content";
+@import "blocks/carousel/carousel-navigation";

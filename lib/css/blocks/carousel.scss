@@ -1,4 +1,5 @@
 .BEM-carousel {
+  position: relative;
   display: flex;
   height: 255px;
   margin: 20px 0;
@@ -7,5 +8,4 @@
   &__image {
     padding: 2px;
   }
-
 }
