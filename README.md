@@ -2,7 +2,7 @@
 
 > Methodologies and Frameworks (BEM) [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433537)
 
-![front-end-automation](preview.png)
+<img src="logo.svg" width=720">
 
 ### System requirements:
 - Node.js -v 4.2.2

@@ -4,7 +4,6 @@ module.exports = function() {
     return {
         develop: {
             tasks: [
-                'githooks',
                 'watch:css',
                 'watch:html'
             ],

@@ -38,7 +38,7 @@ module.exports = function( grunt ) {
                     expand: true,
                     cwd: grunt.config( 'copy.img.src' ),
                     dest: grunt.config( 'copy.img.dest' ),
-                    src: [ '**', '!*.ico' ]
+                    src: [ '**' ]
                 }
             ]
         },
