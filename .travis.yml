@@ -3,6 +3,9 @@ node_js:
   - 4.2.2
 script:
   - npm start
+notifications:
+  email:
+    - stremann@yahoo.com
 deploy:
   provider: heroku
   api_key:
