@@ -1,0 +1,17 @@
+# Intellij Idea project files
+.idea
+
+# Nodejs installed packages
+node_modules
+# Nodejs log file
+npm-debug.log
+
+# SASS development files: sourcemap, compilation cache directory
+public/**/*.css.map
+
+# Composer files and folders
+vendor
+.sass-cache
+
+#Sublime SFTP config file
+sftp-config.json

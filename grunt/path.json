@@ -1,0 +1,54 @@
+{
+    "autoprefixer": {
+        "root": "./public/css/",
+        "pattern": "main.css"
+    },
+
+    "clean": {
+        "tmp": "./.tmp/",
+        "sass": "./.sass-cache/",
+        "public": "./public/*"
+    },
+
+    "compass": {
+        "css": "./public/css/",
+        "scss": "./lib/css/main.scss"
+    },
+
+    "cssmin": {
+        "css": "./public/css/",
+        "min": "./public/css/"
+    },
+
+    "copy": {
+        "index": {
+            "src": "./lib/",
+            "dest": "./public/"
+        },
+        "html": {
+            "src": "./lib/views/",
+            "dest": "./public/views/"
+        },
+        "css": {
+            "src": "./vendor/bower/normalize-css/",
+            "dest": "./public/css/"
+        },
+        "img": {
+            "src": "./lib/img/",
+            "dest": "./public/img/"
+        },
+        "ico": {
+            "src": "./lib/img/",
+            "dest": "./public/"
+        }
+    },
+
+    "watch": {
+        "css": {
+            "pattern": "./lib/css/**/*.scss"
+        },
+        "html": {
+            "pattern": "./lib/**/*.ejs"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 4.2.2
+script:
+  - npm start
+deploy:
+  provider: heroku
+  api_key:
+    secure: og/pT8NL+fKo1ZLoyWnPM0S9FI+IAEH3bKQBG/MMSzTl3ow/B0Q/sCEWhn7HQSxlMfkF4zMm6cVdv07eNE0tG82rtF6UJzWWbwh6h8KQtiUKdvIx+LIretl4OeNxhxJtuBXFzNmRDk601qBpeXI99S/D1QWBwKqV3WXchSUFVh1U6p2eT/zL2lmekAt+4ABq7TD7mIxJZiCQ6vR/xv61p38UvKXD+owrGh5PiDmyiHZe5QwISYS2+S714J9mizsIeCefSAyJ68PXE8ALK71+QcoUQdTFIkHR9x4mW9dUx35H2ubq02Wy85ovzmh3dI6eC8T19CjzBT0HjahkyntdAwt31dt1mUPa2cIuq8QPS7+Ms0YTyjPQmrcEwftrAuqToij3iCWU7fVQV4Md1GR6/MJbbUzaqL6FOGaM00a2Zvzb8R/N2dwUtDXcH5rr8yChoc466rkHspRmrqxgKohlWLXCnBj7Z1dv+GdHpnchyzCMHkb5b16OMwuL1KvrwV1fMYwmsN9uSVwztZbyqdZOw1ap5JzmUtARDtEbZ0RsN9kT3f3o+R61pjwgUcOqD30jq5zgwQOvICjLXXxp00v7knfZuozTI9RbaIm3pbQxGWXU6nO7n1ck93t+n10nFxjyyzMyizCXMDilm+zRHYPxlHHZbO0dbnUIjHPW/sdkgqw=
+  app: b--e-m
+  on:
+    repo: stremann/b--e-m

@@ -1,0 +1,58 @@
+{
+  "name": "b--e-m",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Methodologies and Frameworks (BEM)",
+  "keywords": [
+    "grunt",
+    "npm",
+    "bower",
+    "sass",
+    "node",
+    "express",
+    "ejs",
+    "travis",
+    "heroku"
+  ],
+  "authors": [
+    "Roman Stremedlovskyi <Roman_Stremedlovskyi@epam.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.epam.com/roman_stremedlovskyi/js_mentoring_kyiv_2015.git"
+  },
+  "scripts": {
+    "install": "npm run bower && npm run gem",
+    "gem": "gem install compass breakpoint",
+    "bower": "bower install",
+    "prestart": "npm install",
+    "start": "grunt build",
+    "watch": "grunt",
+    "server": "nodemon server.js"
+  },
+  "engines": {
+    "node": "4.2.2",
+    "npm": "2.14.7"
+  },
+  "dependencies": {
+    "bower": "^1.6.5",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "^2.0.4",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-githooks": "^0.3.1",
+    "load-grunt-config": "^0.17.2",
+    "nodemon": "^1.8.1"
+  }
+}

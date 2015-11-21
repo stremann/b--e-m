@@ -1,0 +1,28 @@
+{
+  "name": "b--e-m",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Methodologies and Frameworks (BEM)",
+  "keywords": [
+    "grunt",
+    "npm",
+    "bower",
+    "sass",
+    "node",
+    "express",
+    "ejs",
+    "travis",
+    "heroku"
+  ],
+  "authors": [
+    "Roman Stremedlovskyi <Roman_Stremedlovskyi@epam.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.epam.com/roman_stremedlovskyi/js_mentoring_kyiv_2015.git"
+  },
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "default": "development",
+    "development": [
+        "concurrent:develop"
+    ],
+    "build": [
+        "clean:public",
+        "compass:build",
+        "autoprefixer:build",
+        "copy:css",
+        "cssmin:build",
+        "copy:index",
+        "copy:html",
+        "copy:img",
+        "copy:ico",
+        "clean:sass",
+        "clean:tmp"
+    ]
+}
