@@ -2,6 +2,7 @@
 
 > Methodologies and Frameworks (BEM) [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433537)
 
+![EPAM Systems](//stremann.github.io/assets/images/logo.svg)
 <img src="//stremann.github.io/assets/images/logo.svg" width=720">
 
 ### System requirements:
