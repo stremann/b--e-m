@@ -21,23 +21,19 @@
     },
 
     "copy": {
-        "index": {
+        "html": {
             "src": "./lib/",
             "dest": "./public/"
-        },
-        "html": {
-            "src": "./lib/views/",
-            "dest": "./public/views/"
         },
         "css": {
             "src": "./vendor/bower/normalize-css/",
             "dest": "./public/css/"
         },
-        "img": {
+        "images": {
             "src": "./lib/img/",
             "dest": "./public/img/"
         },
-        "ico": {
+        "favicon": {
             "src": "./",
             "dest": "./public/"
         }

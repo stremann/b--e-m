@@ -2,23 +2,13 @@
 
 module.exports = function( grunt ) {
     return {
-        index: {
-            files: [
-                {
-                    expand: true,
-                    cwd: grunt.config( 'copy.index.src' ),
-                    dest: grunt.config( 'copy.index.dest' ),
-                    src: [ '*.ejs' ]
-                }
-            ]
-        },
         html: {
             files: [
                 {
                     expand: true,
                     cwd: grunt.config( 'copy.html.src' ),
                     dest: grunt.config( 'copy.html.dest' ),
-                    src: [ '**' ]
+                    src: [ '**/*.ejs' ]
                 }
             ]
         },
@@ -32,23 +22,23 @@ module.exports = function( grunt ) {
                 }
             ]
         },
-        img: {
+        images: {
             files: [
                 {
                     expand: true,
-                    cwd: grunt.config( 'copy.img.src' ),
-                    dest: grunt.config( 'copy.img.dest' ),
-                    src: [ '**' ]
+                    cwd: grunt.config( 'copy.images.src' ),
+                    dest: grunt.config( 'copy.images.dest' ),
+                    src: [ '**/*.jpg' ]
                 }
             ]
         },
-        ico: {
+        favicon: {
             files: [
                 {
                     expand: true,
-                    cwd: grunt.config( 'copy.ico.src' ),
-                    dest: grunt.config( 'copy.ico.dest' ),
-                    src: [ '*.ico' ]
+                    cwd: grunt.config( 'copy.favicon.src' ),
+                    dest: grunt.config( 'copy.favicon.dest' ),
+                    src: [ 'favicon.ico' ]
                 }
             ]
         }

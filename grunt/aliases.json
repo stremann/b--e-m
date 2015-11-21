@@ -9,10 +9,9 @@
         "autoprefixer:build",
         "copy:css",
         "cssmin:build",
-        "copy:index",
         "copy:html",
-        "copy:img",
-        "copy:ico",
+        "copy:images",
+        "copy:favicon",
         "clean:sass",
         "clean:tmp"
     ]
