@@ -3,7 +3,6 @@
 > Methodologies and Frameworks (BEM) [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433537)
 
 ![EPAM Systems](http://stremann.github.io/assets/images/logo.svg)
-<img src="http://stremann.github.io/assets/images/logo.svg" width=720">
 
 ### System requirements:
 - Node.js -v 4.2.2
