@@ -1,0 +1,19 @@
+.BEM-carousel-content {
+  flex: 1;
+  margin: 0 20px;
+
+  &__title {
+    color: $color-red;
+    font-family: pt_serifregular, Verdana, sans-serif;
+    font-size: 30px;
+  }
+
+  &__description {
+    height: 55px;
+    margin-top: 20px;
+    color: $color-black;
+    font-family: pt_sansregular, Verdana, sans-serif;
+    font-size: 14px;
+    @include truncate-m();
+  }
+}

@@ -1,4 +1,11 @@
 .BEM-carousel {
+  display: flex;
   height: 255px;
   margin: 20px 0;
+  background: $color-light-gray;
+
+  &__image {
+    padding: 2px;
+  }
+
 }

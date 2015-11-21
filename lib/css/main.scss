@@ -4,6 +4,10 @@
 // Colors
 @import "variables/colors/base";
 
+// Mixins
+@import "mixins/truncate";
+@import "mixins/truncate-m";
+
 // Blocks
 @import "blocks/base";
 @import "blocks/layout";
@@ -18,3 +22,4 @@
 @import "blocks/news-partials/news-last";
 @import "blocks/news-partials/news-feed";
 @import "blocks/news-partials/news-photo";
+@import "blocks/carousel-partials/carousel-content";
