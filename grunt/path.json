@@ -33,6 +33,10 @@
             "src": "./lib/img/",
             "dest": "./public/img/"
         },
+        "fonts": {
+            "src": "./lib/css/fonts/",
+            "dest": "./public/css/"
+        },
         "favicon": {
             "src": "./",
             "dest": "./public/"

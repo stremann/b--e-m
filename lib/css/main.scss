@@ -1,5 +1,9 @@
+* {
+  border: 1px solid;
+}
+
 // Fonts
-@import url('//fonts.googleapis.com/css?family=Oswald:400,700');
+@import "fonts/base";
 
 // Colors
 @import "variables/colors/base";
@@ -10,3 +14,6 @@
 // Blocks
 @import "blocks/base";
 @import "blocks/layout";
+@import "blocks/navigation";
+@import "blocks/carousel";
+@import "blocks/news";

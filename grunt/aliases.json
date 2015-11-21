@@ -11,6 +11,7 @@
         "cssmin:build",
         "copy:html",
         "copy:images",
+        "copy:fonts",
         "copy:favicon",
         "clean:sass",
         "clean:tmp"

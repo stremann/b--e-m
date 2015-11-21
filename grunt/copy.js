@@ -32,6 +32,16 @@ module.exports = function( grunt ) {
                 }
             ]
         },
+        fonts: {
+            files: [
+                {
+                    expand: true,
+                    cwd: grunt.config( 'copy.fonts.src' ),
+                    dest: grunt.config( 'copy.fonts.dest' ),
+                    src: [ '*.eot', '*.svg', '*.ttf', '*.woff', '*.woff2' ]
+                }
+            ]
+        },
         favicon: {
             files: [
                 {
