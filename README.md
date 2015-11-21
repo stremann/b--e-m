@@ -1,4 +1,4 @@
-# Methodologies and Frameworks: BEM
+# Methodologies and Frameworks: BEM [![Build Status](https://travis-ci.org/stremann/b--e-m.svg?branch=master)](https://travis-ci.org/stremann/b--e-m)
 
 > Methodologies and Frameworks (BEM) [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433537)
 
