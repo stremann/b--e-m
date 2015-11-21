@@ -24,7 +24,7 @@
   },
   "scripts": {
     "install": "npm run bower && npm run gem",
-    "gem": "gem install compass breakpoint",
+    "gem": "gem install compass",
     "bower": "bower install",
     "prestart": "npm install",
     "start": "grunt build",

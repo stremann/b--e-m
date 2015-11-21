@@ -2,6 +2,34 @@
   position: absolute;
   right: 12px;
   bottom: 12px;
+  display: flex;
   width: 108px;
   height: 24px;
+
+  &__arrow {
+    display: inline-block;
+    height: 24px;
+    width: 12px;
+    cursor: pointer;
+  }
+
+  &__content {
+    flex: 1;
+    text-align: center;
+
+    &_text {
+      display: inline-flex;
+      font-family: pt_sansbold, Verdana, sans-serif;
+      font-size: 18px;
+      height: 24px;
+      line-height: 24px;
+    }
+
+    &_img {
+      display: inline-flex;
+      width: 18px;
+      height: 20px;
+      vertical-align: middle;
+    }
+  }
 }

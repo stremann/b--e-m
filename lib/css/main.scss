@@ -1,3 +1,8 @@
+// Dependencies
+@import "compass/utilities/sprites";
+@import "tools/*.png";
+@include all-tools-sprites;
+
 // Fonts
 @import "fonts/base";
 
