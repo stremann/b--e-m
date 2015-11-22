@@ -1,0 +1,18 @@
+/**
+* Create Headings with Right-Side Line in CSS
+* $color - line color
+* $weight - line weight
+* $height - font-size
+* $margin - distance between line and title
+*/
+@mixin header-line( $color, $weight, $height, $margin ) {
+  &::after {
+    content: '';
+    flex-grow: 1;
+    position: relative;
+    top: $height;
+    margin-left: $margin;
+    height: $weight;
+    background: $color;
+  }
+}

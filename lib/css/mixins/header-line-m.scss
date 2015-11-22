@@ -3,7 +3,7 @@
 * $color - line color
 * $weight - line weight
 * $height - parent height
-* $margin - margin between lines and header
+* $margin - distance between lines and title
 */
 @mixin header-line-m( $color, $weight, $height, $margin ) {
   &::before {

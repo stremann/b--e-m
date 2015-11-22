@@ -1,4 +1,4 @@
-// Dependencies
+// Sprites
 @import "compass/utilities/sprites";
 @import "tools/*.png";
 @include all-tools-sprites;
@@ -12,6 +12,7 @@
 // Mixins
 @import "mixins/truncate";
 @import "mixins/truncate-m";
+@import "mixins/header-line";
 @import "mixins/header-line-m";
 
 // Blocks
@@ -23,7 +24,6 @@
 @import "blocks/videos";
 
 // Partials
-@import "blocks/news/news-header";
 @import "blocks/news/news-main";
 @import "blocks/news/news-extra";
 @import "blocks/news/news-last";

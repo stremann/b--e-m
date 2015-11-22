@@ -1,3 +1,11 @@
 .BEM-news-main {
   height: 190px;
+
+  &__header {
+    display: flex;
+    color: $color-black;
+    font-family: pt_sansregular, Verdana, sans-serif;
+    font-size: 24px;
+    @include header-line( $color-black, 2px, 24px, 10px );
+  }
 }
