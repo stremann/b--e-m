@@ -8,7 +8,7 @@
 @mixin header-line( $color, $weight, $height, $margin ) {
   &::after {
     content: '';
-    flex-grow: 1;
+    flex: 1;
     position: relative;
     top: $height;
     margin-left: $margin;
