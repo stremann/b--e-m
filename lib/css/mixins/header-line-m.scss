@@ -1,0 +1,28 @@
+/**
+* Create Headings with Lines in CSS
+* $color - line color
+* $weight - line weight
+* $height - parent height
+* $margin - margin between lines and header
+*/
+@mixin header-line-m( $color, $weight, $height, $margin ) {
+  &::before {
+    content: '';
+    flex-grow: 1;
+    position: relative;
+    top: $height / 2 - $weight;
+    margin-right: $margin;
+    height: $weight;
+    background: $color;
+  }
+
+  &::after {
+    content: '';
+    flex-grow: 1;
+    position: relative;
+    top: $height / 2 - $weight;
+    margin-left: $margin;
+    height: $weight;
+    background: $color;
+  }
+}
