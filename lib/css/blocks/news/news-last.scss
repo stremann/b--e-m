@@ -1,16 +1,22 @@
 .BEM-news-last {
-  height: 300px;
 
   &__header {
     display: flex;
+    height: 18px;
     color: $color-black;
     font-family: pt_sansregular, Verdana, sans-serif;
     font-size: 24px;
-    @include header-line( $color-red, 2px, 24px, 10px );
+    line-height: 18px;
+    @include header-line( $color-red, 2px, 18px, 10px );
+  }
 
-    &_link {
-      color: $color-blue;
-      text-decoration: none;
-    }
+  &__link {
+    color: $color-blue;
+    text-decoration: none;
+  }
+
+  &__list {
+    margin-top: 10px;
+    padding-left: 16px;
   }
 }
