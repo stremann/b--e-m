@@ -3,16 +3,17 @@
 
   &__header {
     display: flex;
-    height: 24px;
+    height: 18px;
     color: $color-black;
     font-family: pt_sansregular, Verdana, sans-serif;
     font-size: 24px;
-    @include header-line( $color-black, 2px, 24px, 10px );
+    line-height: 18px;
+    @include header-line( $color-black, 2px, 18px, 10px );
   }
 
   &__content {
     display: flex;
-    height: 156px;
+    height: 162px;
     justify-content: space-between;
     margin-top: 10px;
   }

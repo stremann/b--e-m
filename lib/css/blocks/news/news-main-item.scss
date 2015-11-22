@@ -1,5 +1,5 @@
 .BEM-news-main-item {
-  display: table;
+  height: 162px;
 
   &__image {
     display: table-cell;
@@ -9,9 +9,10 @@
 
   &__capture {
     width: 140px;
+    margin-top: 2px;
     color: $color-black;
     font-family: pt_sansregular, Verdana, sans-serif;
     font-size: 14px;
-    @include truncate-m( 4, 66px );
+    @include truncate-m( 4, 70px );
   }
 }
