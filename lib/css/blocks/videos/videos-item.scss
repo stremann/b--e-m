@@ -9,6 +9,6 @@
     color: $color-black;
     font-family: pt_sansbold, Verdana, sans-serif;
     font-size: 14px;
-    @include truncate-m( 4, 70px );
+    @include truncate-m( 4, 66px );
   }
 }
