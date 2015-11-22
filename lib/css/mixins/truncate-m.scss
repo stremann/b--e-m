@@ -1,10 +1,10 @@
 /**
 * Truncate Multiple Line Text in Chrome
 * $amount - amount of visible lines
-* $height - element height
+* $height - max height of element
 */
 @mixin truncate-m( $amount, $height ) {
-  height: $height;
+  max-height: $height;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: $amount;

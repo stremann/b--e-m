@@ -1,0 +1,18 @@
+.BEM-news-photo-item {
+  margin-bottom: 20px;
+
+  &__image {
+    display: table-cell;
+    width: 220px;
+    height: 140px;
+  }
+
+  &__capture {
+    width: 220px;
+    margin-top: 2px;
+    color: $color-black;
+    font-family: pt_sansbold, Verdana, sans-serif;
+    font-size: 18px;
+    @include truncate-m( 4, 70px );
+  }
+}
