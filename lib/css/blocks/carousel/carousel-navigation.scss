@@ -34,10 +34,10 @@
     }
 
     &::after {
+      content: '';
       position: relative;
       left: 7px;
       bottom: 14px;
-      content: '';
       display: inline-table;
       height: 24px;
       width: 18px;
