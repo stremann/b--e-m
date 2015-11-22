@@ -1,0 +1,14 @@
+.BEM-videos-item {
+  display: flex;
+  height: 90px;
+  padding: 5px 0;
+
+  &__capture {
+    flex: 1;
+    padding: 0 10px;
+    color: $color-black;
+    font-family: pt_sansbold, Verdana, sans-serif;
+    font-size: 14px;
+    @include truncate-m( 4, 70px );
+  }
+}

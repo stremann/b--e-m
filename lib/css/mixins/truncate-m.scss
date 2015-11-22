@@ -1,9 +1,12 @@
 /**
 * Truncate Multiple Line Text in Chrome
+* $amount - amount of visible lines
+* $height - element height
 */
-@mixin truncate-m() {
+@mixin truncate-m( $amount, $height ) {
+  height: $height;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: $amount;
   -webkit-box-orient: vertical;
 }

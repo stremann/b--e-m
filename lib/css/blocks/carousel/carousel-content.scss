@@ -9,11 +9,10 @@
   }
 
   &__description {
-    height: 55px;
     margin-top: 20px;
     color: $color-black;
     font-family: pt_sansregular, Verdana, sans-serif;
     font-size: 14px;
-    @include truncate-m();
+    @include truncate-m( 3, 55px );
   }
 }
