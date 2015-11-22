@@ -1,0 +1,18 @@
+.BEM-navigation-item {
+  display: inline-flex;
+  font-family: pt_sansregular, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  &__link {
+    display: block;
+    padding: 0 15px;
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  &_active {
+    background: $color-black;
+    color: $color-white;
+  }
+}

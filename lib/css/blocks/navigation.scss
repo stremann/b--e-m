@@ -2,18 +2,7 @@
   height: 30px;
   background: $color-gray;
 
-  &__item {
-    display: inline-block;
-    padding: 0 15px;
-    color: $color-black;
-    font-family: pt_sansregular, Verdana, sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    cursor: pointer;
-
-    &_active {
-      background: $color-black;
-      color: $color-white;
-    }
+  &__menu {
+    flex: 1;
   }
 }
