@@ -1,5 +1,4 @@
 .BEM-news-feed {
-  height: 200px;
   margin-top: 30px;
 
   &__header {
@@ -15,5 +14,10 @@
   &__link {
     color: $color-blue;
     text-decoration: none;
+  }
+
+  &__list {
+    margin-top: 10px;
+    padding-left: 16px;
   }
 }

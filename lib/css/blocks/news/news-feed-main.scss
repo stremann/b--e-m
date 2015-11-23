@@ -1,0 +1,21 @@
+.BEM-news-feed-main {
+  display: flex;
+  height: 55px;
+  margin-top: 10px;
+
+  &__image {
+    display: table-cell;
+    width: 100px;
+    height: 55px;
+  }
+
+  &__capture {
+    flex: 1;
+    margin: 10px 0;
+    padding: 0 10px;
+    color: $color-black;
+    font-family: pt_sansbold, Verdana, sans-serif;
+    font-size: 14px;
+    @include truncate-m( 2, 40px );
+  }
+}
