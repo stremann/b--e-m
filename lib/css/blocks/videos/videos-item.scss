@@ -1,7 +1,21 @@
 .BEM-videos-item {
+  position: relative;
   display: flex;
   height: 90px;
-  padding: 5px 0;
+  margin-bottom: 10px;
+
+  &__image {
+    width: 140px;
+    height: 90px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 24px;
+    height: 19px;
+  }
 
   &__capture {
     flex: 1;
