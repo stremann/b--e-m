@@ -16,4 +16,13 @@
       cursor: default;
     }
   }
+
+  &__icon {
+    position: relative;
+    top: 2px;
+    display: inline-flex;
+    margin: 0 2px;
+    width: 16px;
+    height: 12px;
+  }
 }
