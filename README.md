@@ -22,21 +22,27 @@ $ node server.js
 - Easy way scalability
 - Modular file structure
 - Modular code structure
-- BEM layout implementation
+- Following AIB conception
+- HTML5 semantic layout
+- No warnings on validation
+- No errors on validation
 
 ### Implemented features:
 - Grunt for running tasks
 - SASS for CSS preprocessing
 - Autoprefixer for CSS postprocessing
+- Express for server-side development
 - EJS for server-side templating
-- Express for easy way node development
 - Travis-CI for continuous integration
-- Heroku for easy way deploying
+- Heroku for deployment
 
 ### Check list:
-- Used CSS preprocessor
-- Used CSS postprocessor
-- Used Travis to deploy
+- BEM methodology
+- Correct tag name
+- Accessibility attr
+- CSS code styles 
+- CSS preprocessor
+- CSS postprocessor
 
 ### Configuration:
 - Create repository on GitHub and add remote: 
