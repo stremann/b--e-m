@@ -3,11 +3,13 @@
   &__header {
     display: flex;
     height: 18px;
+    margin: 0;
+    padding: 0;
     @include header-line( $color-red, 2px, 18px, 10px );
   }
 
   &__list {
-    margin-top: 10px;
-    padding-left: 16px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 16px;
   }
 }
