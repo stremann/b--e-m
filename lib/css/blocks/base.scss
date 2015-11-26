@@ -1,14 +1,14 @@
-html {
-  box-sizing: border-box;
-}
+.BEM-layout {
+  display: flex;
+  width: 940px;
+  margin: 30px auto;
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+  &__main {
+    flex: 1;
+  }
 
-h1, h2, h3, h4, h5, h6,
-ul, li,
-figure, figcaption {
-  margin: 0;
-  padding: 0;
+  &__aside {
+    width: 300px;
+    margin-left: 20px;
+  }
 }

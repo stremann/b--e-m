@@ -34,8 +34,8 @@
             "dest": "./public/img/"
         },
         "fonts": {
-            "src": "./lib/css/fonts/",
-            "dest": "./public/css/"
+            "src": "./lib/fonts/",
+            "dest": "./public/fonts/"
         },
         "favicon": {
             "src": "./",

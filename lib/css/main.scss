@@ -3,8 +3,11 @@
 @import "tools/*.png";
 @include all-tools-sprites;
 
-// Fonts
-@import "fonts/base";
+// Utils
+@import "utils/base";
+
+// Typo
+@import "typo/base";
 
 // Colors
 @import "variables/colors/base";
@@ -17,28 +20,26 @@
 
 // Blocks
 @import "blocks/base";
-@import "blocks/layout";
-@import "blocks/navigation";
-@import "blocks/carousel";
-@import "blocks/news";
-@import "blocks/videos";
 
-// Partials
+@import "blocks/navigation/navigation";
 @import "blocks/navigation/navigation-item";
+
+@import "blocks/carousel/carousel";
+@import "blocks/carousel/carousel-content";
+@import "blocks/carousel/carousel-navigation";
+@import "blocks/carousel/carousel-progress";
+
+@import "blocks/news/news";
 @import "blocks/news/news-main";
 @import "blocks/news/news-extra";
 @import "blocks/news/news-last";
 @import "blocks/news/news-feed";
 @import "blocks/news/news-photo";
-@import "blocks/carousel/carousel-content";
-@import "blocks/carousel/carousel-navigation";
-@import "blocks/carousel/carousel-progress";
-@import "blocks/videos/videos-item";
 @import "blocks/news/news-main-item";
 @import "blocks/news/news-list-item";
 @import "blocks/news/news-photo-item";
 @import "blocks/news/news-feed-main";
 @import "blocks/news/news-header-link";
 
-// Utils
-@import "utils/base";
+@import "blocks/videos/videos";
+@import "blocks/videos/videos-item";
