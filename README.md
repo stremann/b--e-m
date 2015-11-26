@@ -1,6 +1,7 @@
 # Methodologies and Frameworks: BEM [![Build Status](https://travis-ci.org/stremann/b--e-m.svg?branch=master)](https://travis-ci.org/stremann/b--e-m)
 
 > Methodologies and Frameworks (BEM) [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433537)
+> HTML/CSS Best practices [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433539)
 
 ![EPAM Systems](http://stremann.github.io/assets/images/logo.svg)
 
@@ -22,10 +23,7 @@ $ node server.js
 - Easy way scalability
 - Modular file structure
 - Modular code structure
-- Following AIB conception
-- HTML5 semantic layout
-- No warnings on validation
-- No errors on validation
+- Adherence to the AIB concept
 
 ### Implemented features:
 - Grunt for running tasks
