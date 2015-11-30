@@ -1,9 +1,28 @@
 .navigation {
   background: $color-gray;
+}
 
-  &__menu {
-    flex: 1;
-    margin: 0;
-    padding: 0;
+.navigation-menu {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu-item {
+  display: inline-flex;
+  font-family: pt_sansregular, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  &__link {
+    display: block;
+    padding: 0 15px;
+    color: $color-black;
+    text-decoration: none;
+
+    &_active {
+      background: $color-black;
+      color: $color-white;
+    }
   }
 }
