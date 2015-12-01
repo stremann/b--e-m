@@ -2,13 +2,13 @@
   display: flex;
   width: 940px;
   margin: 30px auto;
+}
 
-  &__main {
-    flex: 1;
-  }
+.layout-main {
+  flex: 1;
+}
 
-  &__aside {
-    width: 300px;
-    margin-left: 20px;
-  }
+.layout-aside {
+  width: 300px;
+  margin-left: 20px;
 }
