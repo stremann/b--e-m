@@ -51,12 +51,14 @@
     height: 90px;
   }
 
-  &__icon {
+  &__button {
     position: absolute;
     left: 5px;
     bottom: 5px;
     width: 24px;
     height: 19px;
+    border: none;
+    background-color: transparent;
   }
 
   &__capture {

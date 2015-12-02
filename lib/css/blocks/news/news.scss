@@ -47,13 +47,15 @@
     @include truncate-m( 4, 70px );
   }
 
-  &__icon {
+  &__button {
     position: relative;
     top: 2px;
     display: inline-flex;
     margin: 0 2px;
     width: 16px;
     height: 12px;
+    border: none;
+    background-color: transparent;
   }
 }
 
@@ -122,13 +124,15 @@
     @include truncate-m( 2, 40px );
   }
 
-  &__icon {
+  &__button {
     position: relative;
     top: 2px;
     display: inline-flex;
     margin: 0 2px;
     width: 16px;
     height: 12px;
+    border: none;
+    background-color: transparent;
   }
 }
 
@@ -157,17 +161,15 @@
     font-size: 11px;
   }
 
-  &__icon {
+  &__button {
     position: relative;
     top: 2px;
     display: inline-flex;
     margin: 0 2px;
     width: 16px;
     height: 12px;
-
-    &_hidden {
-      display: none;
-    }
+    border: none;
+    background-color: transparent;
   }
 
   &_main {
@@ -201,12 +203,14 @@
     height: 140px;
   }
 
-  &__icon {
+  &__button {
     position: absolute;
     top: 116px;
     left: 5px;
     width: 24px;
     height: 19px;
+    border: none;
+    background-color: transparent;
   }
 
   &__capture {

@@ -64,3 +64,7 @@ $ travis encrypt $(heroku auth:token) --add deploy.api_key
 $ heroku open
 ```
 - Enjoy and have fun with your [application](https://b--e-m.herokuapp.com/)
+
+### WAI-ARIA testing
+- Download and install [ChromeVox](http://www.chromevox.com/)
+- Check provided accessibility  
