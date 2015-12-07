@@ -1,0 +1,6 @@
+// Non-standart respond-to queries
+$breakpoints: add-breakpoint('above Wide', (min-width $breakpoint-Wide));
+$breakpoints: add-breakpoint('above Medium', (min-width $breakpoint-Medium));
+$breakpoints: add-breakpoint('below Medium', (max-width $breakpoint-Medium - 1));
+$breakpoints: add-breakpoint('below Wide', (max-width $breakpoint-Wide - 1));
+$breakpoints: add-breakpoint('above Narrow', (min-width $breakpoint-Narrow));

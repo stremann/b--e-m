@@ -1,0 +1,54 @@
+/**
+* The Ultimate PX/EM Mixin
+* 1. The mixin relies on a function to parse the integer from a value with a unit
+* 2. We define a list of values for both units
+* 3. We iterate through each value in the given parameter $values
+* 4. If the value is either auto or 0, we append it to the list as-is
+* 5. If the value has a unit, we split it to get both the unit and the raw value
+* 6. We append according values to the lists depending on the unit of the given value
+* 7. If the two lists are the same, we output only one (like margin-top: 0)
+* 8. We output the result
+*/
+
+@function parseInt($n) {
+  /* 1 */
+  @return $n / ($n * 0 + 1);
+}
+
+@mixin to-em($property, $values, $font-size) {
+  $px: (); /* 2 */
+  $em: (); /* 3 */
+
+  @each $value in $values {
+    /* 3 */
+    @if $value == 0 or $value == auto {
+      /* 4 */
+      $px: append($px, $value);
+      $em: append($em, $value);
+    } @else {
+      $unit: unit($value); /* 5 */
+      $val: parseInt($value); /* 5 */
+      $font: parseInt($font-size); /* 5 */
+
+      @if $unit == "px" {
+        /* 6 */
+        $px: append($px, $value);
+        $em: append($em, ($val / $font + em));
+      }
+
+      @if $unit == "em" {
+        /* 6 */
+        $px: append($px, ($val * $font + px));
+        $em: append($em, $value);
+      }
+    }
+  }
+
+  @if $px == $em {
+    /* 7 */
+    #{$property}: $px; /* 8 */
+  } @else {
+    #{$property}: $px; /* 8 */
+    #{$property}: $em; /* 8 */
+  }
+}

@@ -24,6 +24,7 @@ $ node server.js
 - Modular file structure
 - Modular code structure
 - Adherence to the AIB concept
+- Ultimate px/rem mixin
 
 ### Implemented features:
 - Grunt for running tasks
