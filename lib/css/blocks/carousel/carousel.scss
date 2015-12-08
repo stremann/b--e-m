@@ -2,8 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  min-height: 255px;
-  @include to-rem( margin-top, 20px );
+  @include proz( margin-top, 20px, $size-main-max-width );
   border-bottom: 5px solid $color-red;
   background: $color-light-gray;
 
@@ -16,12 +15,13 @@
     height: auto;
 
     &-wrapper {
+      @include proz( width, 377px, $size-main-max-width );
       @include respond-to( 'Narrow' ) {
-        margin: 20px;
+        @include proz( margin, 20px, $size-main-max-width );
       }
 
       @include respond-to( 'exNarrow' ) {
-        margin: 10px;
+        @include proz( margin, 10px, $size-main-max-width );
       }
     }
   }
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 0 20px;
+    @include proz( margin, 0 20px, $size-main-max-width );
 
     &__title {
       margin: 0;
@@ -38,18 +38,19 @@
       color: $color-red;
       font-family: pt_serifregular, Verdana, sans-serif;
       @include truncate-m( 3, 108px );
-      @include to-rem( font-size, 30px );
+      @include rem( font-size, 30px );
     }
 
     &__description {
-      @include to-em( margin, 20px 0, 14px );
+      @include em( margin, 20px 0, 14px );
       max-width: 80%;
       color: $color-black;
       font-family: pt_sansregular, Verdana, sans-serif;
-      @include to-rem( font-size, 14px );
+      @include rem( font-size, 14px );
       @include truncate-m( 3, 55px );
       @include respond-to( 'exNarrow' ) {
-        @include to-em( margin, 10px 0, 14px );
+        @include rem( font-size, 14px );
+        @include em( margin, 10px 0, 14px );
         max-width: 60%;
       }
     }
@@ -60,7 +61,7 @@
     right: 12px;
     bottom: 12px;
     display: flex;
-    width: 108px;
+    @include proz( width, 108px, $size-main-max-width );
     height: 24px;
     text-align: center;
     line-height: 24px;
@@ -86,7 +87,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 8px;
+    @include rem( margin, 0 8px );
 
     &-wrapper {
       flex: 1;
@@ -94,12 +95,16 @@
 
     &__title {
       font-family: pt_sansbold, Verdana, sans-serif;
-      @include to-rem( font-size, 18px );
+      @include rem( font-size, 18px );
     }
 
     &__diagram {
       width: 18px;
       margin-top: 2px;
+      @include respond-to( 'below Medium' ) {
+        display: none;
+      }
+
     }
   }
 }

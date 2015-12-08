@@ -2,6 +2,7 @@
 
 > Methodologies and Frameworks (BEM) [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433537)
 > HTML/CSS Best practices [Home Assignment] (https://kb.epam.com/pages/viewpage.action?pageId=312433539)
+> Responsive Design [Home Assignment] (https://kb.epam.com/display/GDOKB/Lecture23%3A+Responsive+Design)
 
 ![EPAM Systems](http://stremann.github.io/assets/images/logo.svg)
 
@@ -24,7 +25,10 @@ $ node server.js
 - Modular file structure
 - Modular code structure
 - Adherence to the AIB concept
-- Ultimate px/rem mixin
+- Adherence to the DRY approach
+- Seven mixins with fallbacks
+- Five types of main breakpoints
+- Five types of extra breakpoints
 
 ### Implemented features:
 - Grunt for running tasks
@@ -37,11 +41,13 @@ $ node server.js
 
 ### Check list:
 - BEM methodology
-- Correct tag name
-- Accessibility attr
+- Semantic tag names
+- WAI-ARIA attributes
 - CSS code styles 
 - CSS preprocessor
 - CSS postprocessor
+- Responsive design
+- Responsive images
 
 ### Configuration:
 - Create repository on GitHub and add remote: 

@@ -1,27 +1,29 @@
 .layout {
   display: flex;
+  flex-direction: row;
+  min-width: $size-layout-min-width;
   max-width: $size-layout-max-width;
-  margin: 30px auto;
+  @include rem( margin, 30px auto );
 
   @include respond-to( 'below Medium' ) {
-    margin: 10px auto;
+    @include rem( margin, 10px auto );
   }
 
   &-main {
     flex: 1;
 
     @include respond-to( 'Medium' ) {
-      padding: 0 30px;
+      @include rem( margin, 0 30px );
     }
 
     @include respond-to( 'below Medium' ) {
-      padding: 0 10px;
+      @include rem( margin, 0 10px );
     }
   }
 
   &-aside {
-    @include to-percent( width, 300px, $size-layout-max-width );
-    margin-left: 20px;
+    @include proz( width, 300px, $size-layout-max-width );
+    @include proz( margin-left, 20px, $size-layout-max-width );
 
     @include respond-to( 'Medium' ) {
       display: none;

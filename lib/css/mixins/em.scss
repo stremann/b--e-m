@@ -15,7 +15,7 @@
   @return $n / ($n * 0 + 1);
 }
 
-@mixin to-em($property, $values, $font-size) {
+@mixin em($property, $values, $font-size) {
   $px: (); /* 2 */
   $em: (); /* 3 */
 

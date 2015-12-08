@@ -23,9 +23,9 @@
 @import "mixins/truncate-m";
 @import "mixins/header-line";
 @import "mixins/header-line-m";
-@import "mixins/to-rem";
-@import "mixins/to-em";
-@import "mixins/to-percent";
+@import "mixins/rem";
+@import "mixins/em";
+@import "mixins/proz";
 
 // Blocks
 @import "blocks/base";

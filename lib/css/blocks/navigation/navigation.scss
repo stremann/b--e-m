@@ -10,8 +10,8 @@
     &-item {
       display: inline-flex;
       font-family: pt_sansregular, Verdana, sans-serif;
-      font-size: 18px;
-      line-height: 30px;
+      @include rem( font-size, 18px );
+      @include em( line-height, 30px, 18px );
 
       @include respond-to( 'exNarrow' ) {
         display: list-item;
@@ -19,7 +19,8 @@
 
       &__link {
         display: block;
-        padding: 0 15px;
+        @include rem( font-size, 18px );
+        @include em( padding, 0 15px, 18px );
         color: $color-black;
         text-decoration: none;
 

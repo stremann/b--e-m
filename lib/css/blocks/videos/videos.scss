@@ -1,32 +1,30 @@
 .videos {
-  position: relative;
   border-bottom: 5px solid $color-black;
 
   &__header {
     display: flex;
-    height: 30px;
+    @include em( height, 30px, 18px );
     margin: 0;
     padding: 0;
     color: $color-purple;
     font-family: pt_sansbold, Verdana, sans-serif;
-    font-size: 18px;
-    text-align: center;
-    line-height: 30px;
+    @include rem( font-size, 18px );
+    @include em( line-height, 30px, 18px );
     text-transform: uppercase;
     @include header-line-m( $color-black, 2px, 30px, 10px );
   }
 
   &__more {
     display: inline-flex;
-    margin: 15px 0 5px;
+    @include em( margin, 15px 0 5px, 18px );
     color: $color-blue;
     font-family: pt_sansregular, Verdana, sans-serif;
-    font-size: 18px;
+    @include rem( font-size, 18px );
     text-decoration: none;
   }
 
   &-list {
-    margin: 5px 0 0;
+    @include rem( margin, 5px 0 0 );
     padding: 0;
 
     &-item {
@@ -35,9 +33,13 @@
       margin: 0;
       padding: 0;
 
-      &__image {
-        width: 140px;
-        height: 90px;
+      &-image {
+        width: 100%;
+        height: auto;
+
+        &-wrapper {
+          @include proz( width, 140px, $size-aside-max-width );
+        }
       }
 
       &__button {
@@ -52,16 +54,16 @@
 
       &__capture {
         flex: 1;
-        padding: 0 10px;
+        @include em( padding, 0 10px, 14px );
         color: $color-black;
         font-family: pt_sansbold, Verdana, sans-serif;
-        font-size: 14px;
+        @include rem( font-size, 14px );
         @include truncate-m( 4, 70px );
       }
 
       &-wrapper {
         list-style: none;
-        margin-bottom: 10px;
+        @include proz( margin-bottom, 10px, $size-aside-max-width );
 
         &:last-child {
           margin-bottom: 0;

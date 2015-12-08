@@ -1,17 +1,17 @@
 .news {
-  margin-top: 30px;
+  @include proz( margin-top, 30px, $size-main-max-width );
 
   &-main {
 
     &__header {
       display: flex;
-      height: 18px;
+      @include em( height, 18px, 24px );
       margin: 0;
       padding: 0;
       color: $color-black;
       font-family: pt_sansregular, Verdana, sans-serif;
-      font-size: 24px;
-      line-height: 18px;
+      @include rem( font-size, 24px );
+      @include em( line-height, 18px, 24px );
       @include header-line( $color-black, 2px, 18px, 10px );
     }
 
@@ -19,7 +19,7 @@
       list-style: none;
       display: flex;
       justify-content: space-between;
-      margin: 10px 0 0;
+      @include rem( margin, 10px 0 0 );
       padding: 0;
 
       &-item {
@@ -28,7 +28,7 @@
 
         &-wrapper {
           display: inline-flex;
-          width: 142px;
+          @include proz( width, 142px, $size-main-max-width );
           @include respond-to ( 'below Medium' ) {
             width: 22%;
           }
@@ -38,14 +38,13 @@
           display: table-cell;
           max-width: 100%;
           height: auto;
-
         }
 
         &__capture {
-          margin-top: 2px;
+          @include em( margin-top, 2px, 14px );
           color: $color-black;
           font-family: pt_sansregular, Verdana, sans-serif;
-          font-size: 14px;
+          @include rem( font-size, 14px );
           @include truncate-m( 4, 70px );
         }
 
@@ -65,15 +64,15 @@
 
   &-extra {
     display: flex;
-    margin-top: 30px;
+    @include proz( margin-top, 30px, $size-main-max-width );
 
     &-main {
       flex: 1;
     }
 
     &-aside {
-      width: 220px;
-      margin-left: 20px;
+      @include proz( width, 220px, $size-main-max-width );
+      @include proz( margin-left, 20px, $size-main-max-width );
 
       @include respond-to( 'below Medium' ) {
         display: none;
@@ -81,11 +80,11 @@
     }
 
     &-list {
-      margin: 10px 0 0 0;
-      padding: 0 0 0 16px;
+      @include rem( margin, 10px 0 0 0 );
+      @include rem( padding, 0 0 0 16px );
 
       &-wrapper {
-        margin-bottom: 30px;
+        @include em( margin-bottom, 30px, 14px );
 
         &:last-child {
           margin-bottom: 0;
@@ -94,7 +93,7 @@
 
       &-header {
         display: flex;
-        height: 18px;
+        @include rem( height, 18px );
         margin: 0;
         padding: 0;
         @include header-line( $color-red, 2px, 18px, 10px );
@@ -102,8 +101,8 @@
         &__link {
           color: $color-blue;
           font-family: pt_sansregular, Verdana, sans-serif;
-          font-size: 24px;
-          line-height: 18px;
+          @include rem( font-size, 24px );
+          @include em( line-height, 18px, 24px );
           text-decoration: none;
         }
       }
@@ -111,28 +110,33 @@
       &-item {
         color: $color-black;
         font-family: pt_sansregular, Verdana, sans-serif;
-        font-size: 14px;
-        line-height: 24px;
+        @include rem( font-size, 14px );
+        @include em( line-height, 24px, 14px );
 
         &-main {
           display: flex;
-          height: 55px;
+          @include proz( height, 55px, $size-main-max-width );
           margin: 0;
 
-          &__image {
+          &-image {
             display: table-cell;
-            width: 100px;
-            height: 55px;
+            width: 100%;
+            height: auto;
+
+            &-wrapper {
+              @include proz( width, 100px, $size-news-main-max-width );
+              align-self: center;
+            }
           }
 
           &__capture {
             flex: 1;
-            margin: 10px 0;
-            padding: 0 10px;
+            @include em( margin, 10px 0, 14px );
+            @include em( padding, 0 10px, 14px );
             color: $color-black;
             font-family: pt_sansbold, Verdana, sans-serif;
-            font-size: 14px;
-            line-height: 18px;
+            @include rem( font-size, 14px );
+            @include em( line-height, 18px, 14px );
             @include truncate-m( 2, 40px );
           }
 
@@ -150,7 +154,7 @@
 
         &__link {
           position: relative;
-          right: 3px;
+          @include rem( right, 3px );
           color: $color-black;
           text-decoration: none;
 
@@ -164,7 +168,7 @@
         &__source {
           color: $color-gray;
           font-family: pt_sansbold, Verdana, sans-serif;
-          font-size: 11px;
+          @include rem( font-size, 11px );
         }
 
         &__button {
@@ -179,7 +183,7 @@
         }
 
         &_main {
-          margin: 0 0 10px -16px;
+          @include rem( margin, 0 0 10px -16px );
           list-style: none;
         }
       }
@@ -200,17 +204,21 @@
 
         &-wrapper {
           position: relative;
-          margin-bottom: 20px;
+          @include proz( margin-bottom, 20px, $size-news-photos-max-width );
 
           &:last-child {
             margin-bottom: 0;
           }
         }
 
-        &__image {
+        &-image {
           display: table-cell;
-          width: 220px;
-          height: 140px;
+          width: 100%;
+          height: auto;
+
+          &-wrapper {
+            @include proz( width, 220px, $size-news-photos-max-width );
+          }
         }
 
         &__button {
@@ -224,12 +232,12 @@
         }
 
         &__capture {
-          width: 220px;
-          margin-top: 2px;
+          @include proz( width, 220px, $size-news-photos-max-width );
+          @include rem( margin-top, 2px );
           color: $color-black;
           font-family: pt_sansbold, Verdana, sans-serif;
-          font-size: 18px;
-          @include truncate-m( 4, 70px );
+          @include rem( font-size, 18px );
+          @include truncate-m( 3, 70px );
         }
       }
     }
