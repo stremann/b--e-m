@@ -72,7 +72,7 @@
 
     &-aside {
       @include proz( width, 220px, $size-main-max-width );
-      @include proz( max-width, 220px, $size-main-max-width );
+      max-width: $size-news-photos-max-width;
       @include proz( margin-left, 20px, $size-main-max-width );
 
       @include respond-to( 'below Medium' ) {
